@@ -1,5 +1,5 @@
 ;Enter your TXT file path .
-filePath = A_WinDir . "\counter.txt"
+filePath = A_WorkingDir . "\counter.txt"
 FileReadLine, deathVar, %filePath%, 1
 
 ;When you press F12 it will increment and update the death counter in the .txt
