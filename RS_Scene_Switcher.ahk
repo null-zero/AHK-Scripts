@@ -39,10 +39,8 @@ LoginTimer:
 		
 		ImageSearch, FoundX, FoundY,  0, 0, 1920, 1080, *30 %image_index%
 		If(ErrorLevel == 0){
-			Loop, 1{
-				Send {CtrlDown}{ShiftDown}{%coverscene% down}{CtrlUp}{ShiftUp}{%coverscene% Up}
-				Sleep, 300
-			}
+			Send {CtrlDown}{ShiftDown}{%coverscene% down}{CtrlUp}{ShiftUp}{%coverscene% Up}
+			Sleep, 300
 			Loop, 500 {
 				ImageSearch, FoundX, FoundY,  0, 0, 1920, 1080, *30 %image_index%
 				If(ErrorLevel == 0){
