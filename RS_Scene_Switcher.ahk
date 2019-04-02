@@ -18,7 +18,7 @@ return
 
 
 
-^+0:: ; CTRL+SHIFT+0 to toggle
+^+0:: ; CTRL+SHIFT+0 to start & toggle timer
     toggle := !toggle
     if (toggle = 1){
         SetTimer, LoginTimer, 500
