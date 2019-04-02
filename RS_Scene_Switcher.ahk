@@ -1,4 +1,4 @@
-; RS Streaming AHK
+; RS Scene Switcher AHK
 
 ; Set Scene Switcher Binds -> CTRL + SHIFT + "?" <-
 mainscene := 1
