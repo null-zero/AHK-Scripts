@@ -4,23 +4,23 @@ filePath := A_WorkingDir . "\counter.txt"
 IfNotExist, %filePath%
 	FileAppend,0, %filePath%
 
-FileReadLine, deathVar, %filePath%, 1
+FileReadLine, countVar, %filePath%, 1
 
 
-;When you press F12 it will increment and update the death counter in the .txt
+;When you press F12 it will increment and update the counter in the .txt
 	F12::
-		FileReadLine, deathVar, %filePath%, 1
-		Var := ++deathVar
+		FileReadLine, countVar, %filePath%, 1
+		Var := ++countVar
 		FileDelete, %filePath%
-		FileAppend,%deathVar%, %filePath%
+		FileAppend,%countVar%, %filePath%
 	return
 
-;When you press F11 it will decrement and update the death counter in the .txt
+;When you press F11 it will decrement and update the counter in the .txt
 	F11::
-		FileReadLine, deathVar, %filePath%, 1
-		if deathVar = 0
+		FileReadLine, countVar, %filePath%, 1
+		if countVar = 0
 		return
-		Var := --deathVar
+		Var := --countVar
 		FileDelete, %filePath%
-		FileAppend,%deathVar%, %filePath%
+		FileAppend,%countVar%, %filePath%
 	return
