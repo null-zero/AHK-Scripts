@@ -6,9 +6,9 @@
 invSpaceImage := A_WorkingDir . "\images\rs\invspace25.png"
 
 ;start timer
-SetTimer, TradeSearch, 250
+SetTimer, Search, 250
 
-;create gdpi 
+;create gdip
 gdip1 := new Gdip()
 win1 := new Gdip.Window(new Gdip.Size(1920, 1080))
 brush1 := new Gdip.Brush(100, 78, 244, 66)
@@ -28,7 +28,7 @@ ResizeMeGuiClose:
     Gui, ResizeMe:Destroy
 return 
 
-TradeSearch:
+Search:
     win1.Clear()
     IfWinActive, ahk_exe RuneLite.exe 
     {
