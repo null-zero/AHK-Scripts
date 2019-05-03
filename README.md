@@ -9,4 +9,4 @@ Probably qol or scripts for streaming
 
 [OSRS_Scene_Switcher.ahk](https://github.com/null-zero/AHK-Scripts/blob/master/OSRS_Scene_Switcher.ahk) - Automatically switches scenes when the login button or the bank pin interface is visible in osrs
 
-[LavaRunnerOverlay.ahk](https://github.com/null-zero/AHK-Scripts/blob/master/LavaRunnerOverlay.ahk) - On screen visual aid for when to trade binding necklace. Checks for the image of "25" inventory spaces.
+[Lava_Runner_Overlay.ahk](https://github.com/null-zero/AHK-Scripts/blob/master/Lava_Runner_Overlay.ahk) - On screen visual aid for when to trade binding necklace. Checks for the image of "25" inventory spaces.
