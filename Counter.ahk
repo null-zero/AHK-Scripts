@@ -15,7 +15,7 @@ FileReadLine, countVar, %filePath%, 1
 		FileAppend,%countVar%, %filePath%
 	return
 
-;When you press F11 it will decrement and update the counter in the .txt
+;When you press F11 it will decrement and update the counter in the .txt, wont count below 0, remove the if return if needed
 	F11::
 		FileReadLine, countVar, %filePath%, 1
 		if countVar = 0
