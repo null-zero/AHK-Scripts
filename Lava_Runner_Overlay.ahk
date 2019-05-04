@@ -3,7 +3,7 @@
 #Include %A_ScriptDir%\include\Gdip2.ahk 
 
 ;set Images
-invSpaceImage := A_WorkingDir . "\images\rs\invspace25.png"
+invSpaceImage := A_WorkingDir . "\images\rs\invspace25-fixed.png"
 
 ;start timer
 SetTimer, Search, 250
@@ -35,11 +35,16 @@ Search:
         ImageSearch, FoundX, FoundY, 0, 0, A_ScreenWidth, A_ScreenHeight, %invSpaceImage%
         if(ErrorLevel == 0){
             win1.FillRectangle(brush1, new Gdip.Point(userXPos, userYPos), new Gdip.Size(userWidth, userHeight))
+			updatesleep := 1
         }else{
             win1.FillRectangle(brush2, new Gdip.Point(userXPos, userYPos), new Gdip.Size(userWidth, userHeight))
         }
     }
     win1.Update()
+	if(updatesleep == 1){
+		sleep, 10000
+		updatesleep := 0
+	} 
     if WinExist("ahk_class #32770")
         WinSet, ExStyle, +0x20
 return
