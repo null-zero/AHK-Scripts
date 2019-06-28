@@ -18,12 +18,12 @@ return
 ^+0:: ; CTRL+SHIFT+0 to start & toggle timer
     toggle := !toggle
     if (toggle = 1){
-        SetTimer, WatchWin, 50
 		DoSub(True)
+        SetTimer, WatchWin, 50
 		Menu, Tray, Icon, %script_active_image% 
     } else {
-        SetTimer, WatchWin, Off
 		DoSub(False)
+        SetTimer, WatchWin, Off
 		Menu, Tray, Icon, %script_inactive_image%
     }
 return
@@ -53,16 +53,16 @@ DoSub(state){
 		AHI.SubscribeKey(keyboardId, GetKeySC("a"), true, Func("KeyEvent").Bind(1))
 		AHI.SubscribeKey(keyboardId, GetKeySC("s"), true, Func("KeyEvent").Bind(2))
 		AHI.SubscribeKey(keyboardId, GetKeySC("d"), true, Func("KeyEvent").Bind(3))
-		AHI.SubscribeKey(keyboardId, GetKeySC("j"), true, Func("KeyEvent").Bind(4))
-		AHI.SubscribeKey(keyboardId, GetKeySC("k"), true, Func("KeyEvent").Bind(5))
-		AHI.SubscribeKey(keyboardId, GetKeySC("l"), true, Func("KeyEvent").Bind(6))
+		AHI.SubscribeKey(keyboardId, GetKeySC("left"), true, Func("KeyEvent").Bind(4))
+		AHI.SubscribeKey(keyboardId, GetKeySC("down"), true, Func("KeyEvent").Bind(5))
+		AHI.SubscribeKey(keyboardId, GetKeySC("right"), true, Func("KeyEvent").Bind(6))
 	} else {
 		AHI.UnsubscribeKey(keyboardId, GetKeySC("a"))
 		AHI.UnsubscribeKey(keyboardId, GetKeySC("s"))
 		AHI.UnsubscribeKey(keyboardId, GetKeySC("d"))
-		AHI.UnsubscribeKey(keyboardId, GetKeySC("j"))
-		AHI.UnsubscribeKey(keyboardId, GetKeySC("k"))
-		AHI.UnsubscribeKey(keyboardId, GetKeySC("l"))
+		AHI.UnsubscribeKey(keyboardId, GetKeySC("left"))
+		AHI.UnsubscribeKey(keyboardId, GetKeySC("down"))
+		AHI.UnsubscribeKey(keyboardId, GetKeySC("right"))
 	}
 }
 
