@@ -18,7 +18,7 @@ return
 ^+0:: ; CTRL+SHIFT+0 to start & toggle timer
     toggle := !toggle
     if (toggle = 1){
-        SetTimer, WatchWin, -0
+        SetTimer, WatchWin, 50
 		DoSub(True)
 		Menu, Tray, Icon, %script_active_image% 
     } else {
