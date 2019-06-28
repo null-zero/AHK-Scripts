@@ -24,3 +24,6 @@ FileReadLine, countVar, %filePath%, 1
 		FileDelete, %filePath%
 		FileAppend,%countVar%, %filePath%
 	return
+
+End::
+	ExitApp
