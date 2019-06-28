@@ -12,12 +12,12 @@ Probably qol or scripts for streaming
 [Lava_Runner_Overlay.ahk](https://github.com/null-zero/AHK-Scripts/blob/master/Lava_Runner_Overlay.ahk) - On screen visual aid for when to trade binding necklace. Checks for the image of "25" inventory spaces.
 <---- Must be on fixed ingame with stretched mode enabled on 1920x1080 screen. ---->
 
-    Haven't tested with any other settings. If it doesn't work for you, update the image of the "25" text to what yours looks like. 
+   Haven't tested with any other settings. If it doesn't work for you, update the image of the "25" text to what yours looks like. 
 
-    Might revisit this to work no matter the settings, just seems like a lot of work. Unsure if OCR is fast enough to be worth while    using.
+   Might revisit this to work no matter the settings, just seems like a lot of work. Unsure if OCR is fast enough to be worth while    using.
 
 
-[Dart_Fletching_Rebind.ahk](https://github.com/null-zero/AHK-Scripts/blob/master/Dart_Fletching_Rebind.ahk) - **!!!!REQUIRES [AutoHotInterception](https://github.com/evilC/AutoHotInterception)!!!!** | Rebind keys to Windows Mouse Keys, specifically used for dart fletching but could be modified to be used for other things. This is specifically a 1:1 input script. The old scripts for this use Class_DD.ahk, which is fine if you aren't on Windows 10 due to unsigned drivers. This script uses [AutoHotInterception](https://github.com/evilC/AutoHotInterception), which uses [Interception](https://github.com/oblitum/Interception), which... has signed drivers!
+[Dart_Fletching_Rebind.ahk](/AHK-Scripts/blob/master/Dart_Fletching_Rebind.ahk) - **!!!!REQUIRES [AutoHotInterception](https://github.com/evilC/AutoHotInterception)!!!!** | Rebind keys to Windows Mouse Keys, specifically used for dart fletching but could be modified to be used for other things. This is specifically a 1:1 input script. The old scripts for this use Class_DD.ahk, which is fine if you aren't on Windows 10 due to unsigned drivers. This script uses [AutoHotInterception](https://github.com/evilC/AutoHotInterception), which uses [Interception](https://github.com/oblitum/Interception), which... has signed drivers!
 
 -----------------------------------------------------------
 Installation guide for AHI & Interception (Mostly borrowed from AHI's github)
