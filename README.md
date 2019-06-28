@@ -17,7 +17,7 @@ Haven't tested with any other settings. If it doesn't work for you, update the i
   Might revisit this to work no matter the settings, just seems like a lot of work. Unsure if OCR is fast enough to be worth while    using.
 
 
-[Dart_Fletching_Rebind.ahk](https://github.com/null-zero/AHK-Scripts/blob/master/Dart_Fletching_Rebind.ahk) - !!!!REQUIRES [AutoHotInterception](https://github.com/evilC/AutoHotInterception)!!!! | Rebind keys to Windows Mouse Keys, specifically used for dart fletching but could be modified to be used for other things. This is specifically a 1:1 input script. The old scripts for this use Class_DD.ahk, which is fine if you aren't on Windows 10 due to unsigned drivers. This script uses [AutoHotInterception](https://github.com/evilC/AutoHotInterception), which uses [Interception](https://github.com/oblitum/Interception), which... has signed drivers!
+[Dart_Fletching_Rebind.ahk](https://github.com/null-zero/AHK-Scripts/blob/master/Dart_Fletching_Rebind.ahk) - **!!!!REQUIRES [AutoHotInterception](https://github.com/evilC/AutoHotInterception)!!!!** | Rebind keys to Windows Mouse Keys, specifically used for dart fletching but could be modified to be used for other things. This is specifically a 1:1 input script. The old scripts for this use Class_DD.ahk, which is fine if you aren't on Windows 10 due to unsigned drivers. This script uses [AutoHotInterception](https://github.com/evilC/AutoHotInterception), which uses [Interception](https://github.com/oblitum/Interception), which... has signed drivers!
 
 -----------------------------------------------------------
 Installation guide for AHI & Interception (Mostly borrowed from AHI's github)
