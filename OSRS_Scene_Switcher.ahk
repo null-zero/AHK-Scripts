@@ -56,4 +56,5 @@ LoginTimer:
 	}
 return
 
-
+End::
+	ExitApp
