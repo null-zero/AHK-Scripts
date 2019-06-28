@@ -40,7 +40,7 @@ Installation guide for AHI & Interception (Mostly borrowed from AHI's github)
 1. Run Unblocker.ps1
     1. In AHI's `lib` folder, run `Unblocker.ps1` as admin
         1. Unblocker.ps1 should allow you to run the Interception DLL's, if they are blocked from running
-            1. This can be done manually by right clicking the DLLs, selecting Properties, and checking a "Block" box if it exists.
+            - This can be done manually by right clicking the DLLs, selecting Properties, and checking a "Block" box if it exists.
       
 1. Get VID/PID of the keyboard you are using
     1. In AHI's main folder, run `Monitor.ahk`
