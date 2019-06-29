@@ -6,28 +6,6 @@
 global AHI := new AutoHotInterception()
 global keyboardId := AHI.GetKeyboardId(0x04D9, 0x0159) ;This is my VID/PID, USE YOUR OWN, if you don't know what it is, go back through AHI's setup
 
-;Set Images
-script_active_image := A_WorkingDir . "\images\global\active.ico"
-script_inactive_image := A_WorkingDir . "\images\global\notactive.ico"
-
-;Init
-toggle := 0
-return
-
-;Toggle
-^+0:: ; CTRL+SHIFT+0 to start & toggle timer
-    toggle := !toggle
-    if (toggle = 1){
-		DoSub(True)
-        SetTimer, WatchWin, 50
-		Menu, Tray, Icon, %script_active_image% 
-    } else {
-		DoSub(False)
-        SetTimer, WatchWin, Off
-		Menu, Tray, Icon, %script_inactive_image%
-    }
-return
-
 ;Get KeyStates of all KeyEvents, if key = x send NumpadKey 
 KeyEvent(btn, state){
 	static btnStates := {}
@@ -65,11 +43,12 @@ DoSub(state){
 		AHI.UnsubscribeKey(keyboardId, GetKeySC("right"))
 	}
 }
+return
 
 ;Timer loop to check if RuneLite is active window
 WatchWin:
 	Loop {
-		WinWaitActive, ahk_exe RuneLite.exe
+		WinWaitActive, ahk_exe RuneLite.exe 
 		DoSub(True)
 		WinWaitNotActive, ahk_exe RuneLite.exe
 		DoSub(False)
