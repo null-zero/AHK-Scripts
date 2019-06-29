@@ -43,7 +43,7 @@ DoSub(state){
 		AHI.UnsubscribeKey(keyboardId, GetKeySC("right"))
 	}
 }
-return
+
 
 ;Timer loop to check if RuneLite is active window
 WatchWin:
