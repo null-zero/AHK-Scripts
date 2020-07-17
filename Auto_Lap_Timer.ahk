@@ -21,8 +21,8 @@
 
 #SingleInstance force
 
-FillImage := A_WorkingDir . "\images\lavarunes.png"
-MageImage := A_WorkingDir . "\images\magetext.png"
+FillImage := A_WorkingDir . "\images\rs\lavarunes.png"
+MageImage := A_WorkingDir . "\images\rs\magetext.png"
 
     Gosub,currentTime
     Gosub,updateGui
