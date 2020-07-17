@@ -74,7 +74,6 @@ MageImage := A_WorkingDir . "\images\rs\magetext.png"
             FillCount += 1
             ResetTime = %A_TickCount%
             GuiControl,text,Count,%FillCount%
-            gosub,updateGui
             Sleep, 24000
         }
     return
@@ -85,7 +84,6 @@ MageImage := A_WorkingDir . "\images\rs\magetext.png"
             FillCount = 1
             ResetTime = %A_TickCount%
             GuiControl,text,Count,%FillCount%
-            gosub,updateGui
         }
     return
 
