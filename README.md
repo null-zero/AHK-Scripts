@@ -5,7 +5,7 @@ My shitty ahk scripts
 Probably qol or scripts for streaming
 
 --------------------------------------
-[Auto_Lap_Timer.ahk](/Auto_Lap_Timer.ahk) - Automatically keep track of how many runecrafting laps you've compelted. Uses image of a completed inventory stack of runes to detect run completion, resets counter on chat image of dark mage. If this doesn't work for you, use the images I've included as a guide and replace them with screenshots of your own client. Most of the scripts which use image search rely on client settings to be the same to produce the same image, which isn't likely. Making your own images will garuntee it works. 
+[Auto_Lap_Timer.ahk](/Auto_Lap_Timer.ahk) - Automatically keep track of how many runecrafting laps you've completed. Uses image of a completed inventory stack of runes to detect run completion, resets counter on chat image of dark mage. If this doesn't work for you, use the images I've included as a guide and replace them with screenshots of your own client. Most of the scripts which use image search rely on client settings to be the same to produce the same image, which isn't likely. Making your own images will garuntee it works. 
 
 [Counter.ahk](Counter.ahk) - Simple counter using hotkeys, originally meant to keep track of deaths. Saves to file to be used as an on screen element
 
