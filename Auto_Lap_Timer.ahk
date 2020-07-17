@@ -27,8 +27,8 @@ MageImage := A_WorkingDir . "\images\rs\magetext.png"
     Gosub,currentTime
     Gosub,updateGui
     SetTimer,currentTime,500
-    SetTimer,LavaTimer,500
-    SetTimer,MageTimer,100
+    SetTimer,LavaTimer,250
+    SetTimer,MageTimer,250
 
     FillCount := 1
     ResetTime := A_TickCount
@@ -68,24 +68,24 @@ MageImage := A_WorkingDir . "\images\rs\magetext.png"
 
 
     LavaTimer:
-        ImageSearch, FoundX, FoundY,  0, 0, A_ScreenWidth, A_ScreenHeight, *30 %FillImage%
+        ImageSearch, FoundX, FoundY,  %A_ScreenWidth%/2, %A_ScreenHeight%/2, A_ScreenWidth, A_ScreenHeight, *30 %FillImage%
 		If(ErrorLevel == 0){
 
             FillCount += 1
             ResetTime = %A_TickCount%
             GuiControl,text,Count,%FillCount%
-            gosub updateGui
+            gosub,updateGui
             Sleep, 24000
         }
     return
 
     MageTimer:
-        ImageSearch, FoundX, FoundY,  0, 0, A_ScreenWidth, A_ScreenHeight, *30 %MageImage%
+        ImageSearch, FoundX, FoundY,  %A_ScreenWidth%/2, %A_ScreenHeight%/2, A_ScreenWidth, A_ScreenHeight, *30 %MageImage%
 		If(ErrorLevel == 0){
             FillCount = 1
             ResetTime = %A_TickCount%
             GuiControl,text,Count,%FillCount%
-            gosub updateGui
+            gosub,updateGui
         }
     return
 
