@@ -31,16 +31,16 @@ DoSub(state){
 		AHI.SubscribeKey(keyboardId, GetKeySC("a"), true, Func("KeyEvent").Bind(1))
 		AHI.SubscribeKey(keyboardId, GetKeySC("s"), true, Func("KeyEvent").Bind(2))
 		AHI.SubscribeKey(keyboardId, GetKeySC("d"), true, Func("KeyEvent").Bind(3))
-		AHI.SubscribeKey(keyboardId, GetKeySC("left"), true, Func("KeyEvent").Bind(4))
-		AHI.SubscribeKey(keyboardId, GetKeySC("down"), true, Func("KeyEvent").Bind(5))
-		AHI.SubscribeKey(keyboardId, GetKeySC("right"), true, Func("KeyEvent").Bind(6))
+		AHI.SubscribeKey(keyboardId, GetKeySC("z"), true, Func("KeyEvent").Bind(4))
+		AHI.SubscribeKey(keyboardId, GetKeySC("x"), true, Func("KeyEvent").Bind(5))
+		AHI.SubscribeKey(keyboardId, GetKeySC("c"), true, Func("KeyEvent").Bind(6))
 	} else {
 		AHI.UnsubscribeKey(keyboardId, GetKeySC("a"))
 		AHI.UnsubscribeKey(keyboardId, GetKeySC("s"))
 		AHI.UnsubscribeKey(keyboardId, GetKeySC("d"))
-		AHI.UnsubscribeKey(keyboardId, GetKeySC("left"))
-		AHI.UnsubscribeKey(keyboardId, GetKeySC("down"))
-		AHI.UnsubscribeKey(keyboardId, GetKeySC("right"))
+		AHI.UnsubscribeKey(keyboardId, GetKeySC("z"))
+		AHI.UnsubscribeKey(keyboardId, GetKeySC("x"))
+		AHI.UnsubscribeKey(keyboardId, GetKeySC("c"))
 	}
 }
 
