@@ -105,7 +105,7 @@
     difference /= 1000
     if(FillCount >= 9 or Difference >= 24)
     {
-        if(FillCount = 10 or Difference >= 30)
+        if(FillCount >= 10 or Difference >= 30)
         {
             Gui,color,red
         }
