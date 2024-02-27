@@ -1,5 +1,5 @@
 # AHK-Scripts
-My shitty ahk scripts
+Random ahk/keybind scripts
 
 
 Probably qol or scripts for streaming
